@@ -4,7 +4,7 @@ type LinkContentTypes = {
   url: string;
   color?: string;
   bgColor?: string;
-}
+};
 
 export type LinkTypes = {
   name: string;

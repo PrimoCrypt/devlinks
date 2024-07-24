@@ -1,5 +1,4 @@
 import NavBar from "@/components/navbar";
-import Image from "next/image";
 import MobileSection from "./mobile-section";
 
 const userData = {

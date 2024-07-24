@@ -3,20 +3,18 @@ import { useState, useRef } from "react";
 import Image from "next/image";
 import { InputFieldTypes } from "@/types/FormTypes";
 
-
-
 const InputField = ({
-  name= "",
-  flexDirection="flex-col",
-  flexAlignItems="items-start",
-  flexJustify= "justify-start",
+  name = "",
+  flexDirection = "flex-col",
+  flexAlignItems = "items-start",
+  flexJustify = "justify-start",
   type = "email",
   image = "/email-icon.svg",
   placeholder = "ben@example.com",
-  label= "Email address"
+  label = "Email address",
 }: InputFieldTypes) => {
   const [isActive, setIsActive] = useState(false);
-  const inputRef = useRef(null);
+  const inputReference = useRef(null);
 
   const handleFocus = () => {
     setIsActive(true);
@@ -40,7 +38,7 @@ const InputField = ({
       >
         <Image width={16} height={16} src={image} alt="" />
         <input
-          ref={inputRef}
+          ref={inputReference}
           className={`w-full outline-none ${
             isActive ? "opcaity-[1] bg-transparent" : "opacity-[0.75]"
           }`}

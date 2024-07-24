@@ -1,5 +1,4 @@
 import ButtonPrimary from "@/components/button-primary";
-import ButtonSecondary from "@/components/button-secondary";
 import InputField from "@/components/input-field";
 import { LOGIN_ROUTE } from "@/constants/routes";
 import Link from "next/link";

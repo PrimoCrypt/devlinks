@@ -7,8 +7,7 @@ interface Link {
   color?: string;
   bgColor?: string;
 }
-const SingleLink = ({name, url, icon, color="white", bgColor}: Link) => {
-  
+const SingleLink = ({ name, icon, color = "white", bgColor }: Link) => {
   return (
     <div className="w-full">
       <button
@@ -21,6 +20,5 @@ const SingleLink = ({name, url, icon, color="white", bgColor}: Link) => {
       </button>
     </div>
   );
-}
-export default SingleLink
-
+};
+export default SingleLink;

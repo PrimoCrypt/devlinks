@@ -1,5 +1,4 @@
 import ButtonPrimary from "@/components/button-primary";
-import ButtonSecondary from "@/components/button-secondary";
 import InputField from "@/components/input-field";
 import { REGISTER_ROUTE } from "@/constants/routes";
 import Link from "next/link";
@@ -28,8 +27,13 @@ const SignInPage = () => {
           image="/password-icon.svg"
           placeholder="Enter your password"
         />
-        <ButtonPrimary text="Login"/>
-        <div className="text-center">Don&apos;t have an account? <Link href={REGISTER_ROUTE} className="text-primary-default">Create account</Link></div>
+        <ButtonPrimary text="Login" />
+        <div className="text-center">
+          Don&apos;t have an account?
+          <Link href={REGISTER_ROUTE} className="text-primary-default">
+            Create account
+          </Link>
+        </div>
       </form>
     </div>
   );

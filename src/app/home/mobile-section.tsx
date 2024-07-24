@@ -10,7 +10,7 @@ interface Link {
   bgColor?: string;
 }
 
-interface LinksPageProps {
+interface LinksPageProperties {
   name: string;
   email: string;
   links: Link[];
@@ -27,7 +27,7 @@ const MobileSection = ({
       bgColor: "black",
     },
   ],
-}: LinksPageProps) => {
+}: LinksPageProperties) => {
   return (
     <div className=" bg-white rounded-lg flex justify-center items-center py-[5rem] h-[49.125rem] relative">
       <div className="self-start px-[2rem]">
@@ -37,15 +37,15 @@ const MobileSection = ({
         <div className="flex flex-col items-center gap-[1.563rem]">
           <div className="bg-grey-light h-[6rem] rounded-[50%] w-[6rem]"></div>
           <div className="flex flex-col items-center gap-[0.813rem]">
-            {name != "" ? (
-              <h1 className="text-[1.125rem]">{name}</h1>
-            ) : (
+            {name == "" ? (
               <div className="bg-grey-light h-[1rem] w-[10rem] rounded-[10px]"></div>
-            )}
-            {email != "" ? (
-              <h1 className="text-[0.875rem]">{email}</h1>
             ) : (
+              <h1 className="text-[1.125rem]">{name}</h1>
+            )}
+            {email == "" ? (
               <div className="bg-grey-light h-[0.5rem] w-[4.5rem] rounded-[10px]"></div>
+            ) : (
+              <h1 className="text-[0.875rem]">{email}</h1>
             )}
           </div>
         </div>

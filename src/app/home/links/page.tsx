@@ -4,13 +4,8 @@ import DropDown from "@/components/dropdown";
 import InputField from "@/components/input-field";
 import { initialLinks } from "@/data/data";
 import { LinkTypes } from "@/types/LinkTypes";
-import Image from "next/image";
 
-const LinksPage = ({
-  name = "ben",
-  email = "ben@example.com",
-  links = initialLinks,
-}: LinkTypes) => {
+const LinksPage = ({ links = initialLinks }: LinkTypes) => {
   return (
     <div className="p-[2.5rem] flex flex-col gap-[2.5rem]">
       <div>

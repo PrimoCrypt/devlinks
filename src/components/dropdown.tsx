@@ -1,20 +1,15 @@
 "use client";
-import { useState, useRef } from "react";
+import { useState } from "react";
 import Image from "next/image";
 
-interface InputFieldProps {
+interface InputFieldProperties {
   label?: string;
   type?: string;
   image?: string;
   placeholder?: string;
 }
 
-const DropDown = ({
-  type = "email",
-  image = "/email-icon.svg",
-  placeholder = "ben@example.com",
-  label = "Email address",
-}: InputFieldProps) => {
+const DropDown = ({ image = "/email-icon.svg" }: InputFieldProperties) => {
   const [selectedValue, setSelectedValue] = useState("Pick one"); // Initial value
 
   const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {

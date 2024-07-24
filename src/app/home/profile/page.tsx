@@ -1,17 +1,10 @@
 "use client";
 import ButtonPrimary from "@/components/button-primary";
 import InputField from "@/components/input-field";
-import { initialLinks } from "@/data/data";
 import { LinkTypes } from "@/types/LinkTypes";
 import Image from "next/image";
-import Link from "next/link";
 
-const ProfilePage = ({
-  name = "",
-  displayPicture = "",
-  email = "ben@example.com",
-  links = initialLinks,
-}: LinkTypes) => {
+const ProfilePage = ({ displayPicture = "" }: LinkTypes) => {
   return (
     <div className="p-[2.5rem] flex flex-col gap-[2.5rem]">
       <div>
@@ -28,7 +21,7 @@ const ProfilePage = ({
             Profile picture
           </p>
           <div className="w-full max-w-[193px] h-[193px] bg-primary-disabled rounded-lg">
-            {displayPicture !== "" ? (
+            {displayPicture === "" ? (
               <Image
                 src={displayPicture}
                 alt="profile picture"
