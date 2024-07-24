@@ -7,7 +7,7 @@ import { LinkTypes } from "@/types/LinkTypes";
 import Image from "next/image";
 
 const LinksPage = ({
-  name = "",
+  name = "ben",
   email = "ben@example.com",
   links = initialLinks,
 }: LinkTypes) => {
