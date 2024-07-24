@@ -9,6 +9,6 @@ type LinkContentTypes = {
 export type LinkTypes = {
   name: string;
   email: string;
-  displayPicture: string;
+  displayPicture?: string;
   links: LinkContentTypes[];
 };
