@@ -2,12 +2,9 @@
 import ButtonSecondary from "@/components/button-secondary";
 import DropDown from "@/components/dropdown";
 import InputField from "@/components/input-field";
-import LinkDetails from "@/components/link-details";
-import SingleLink from "@/components/single-link";
 import { initialLinks } from "@/data/data";
 import { LinkTypes } from "@/types/LinkTypes";
 import Image from "next/image";
-import Link from "next/link";
 
 const LinksPage = ({
   name = "",
