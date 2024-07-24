@@ -1,4 +1,3 @@
-import { Limelight } from "next/font/google";
 import type { Config } from "tailwindcss";
 import daisyui from "daisyui";
 
@@ -23,13 +22,13 @@ const config: Config = {
           verylight: "#FAFAFA",
         },
         whitesmoke: "#EEEEEE",
-        red:{
+        red: {
           default: "#FF3939",
-        }
+        },
       },
-      fontFamily:{
-        primary: "instrument-sans"
-      }
+      fontFamily: {
+        primary: "instrument-sans",
+      },
     },
   },
   plugins: [daisyui],
