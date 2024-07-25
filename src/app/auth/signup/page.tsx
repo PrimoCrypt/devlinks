@@ -31,7 +31,7 @@ const SignUpPage = () => {
   };
 
   return (
-    <div className="w-[29.75rem] p-[2.5rem] bg-white flex flex-col gap-[2.5rem] rounded-lg">
+    <div className="md:p-[2.5rem] bg-white flex flex-col gap-[2.5rem] rounded-lg">
       <div className="text-grey-dark w-full flex flex-col gap-[0.5rem]  leading-[150%]">
         <b className="text-[2rem] inline-block leading-[150%]">
           Create account
@@ -73,7 +73,7 @@ const SignUpPage = () => {
         />
         <p>Password must contain at least 8 characters</p>
         <ButtonPrimary text="Create new account" />
-        <div className="text-center">
+        <div className="text-center flex flex-col md:inline">
           Already have an account?{" "}
           <Link href={LOGIN_ROUTE} className="text-primary-default">
             Login

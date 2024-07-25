@@ -32,7 +32,7 @@ const SignInPage = () => {
       });
   };
   return (
-    <div className="p-[2.5rem] bg-white flex flex-col gap-[2.5rem] rounded-lg">
+    <div className="md:p-[2.5rem] bg-white flex flex-col gap-[2.5rem] rounded-lg">
       <div className="text-grey-dark w-full leading-[150%] flex flex-col gap-[0.5rem]">
         <b className="text-[2rem] inline-block h-[2rem]">Login</b>
         <p className="text-[1rem]">
@@ -62,7 +62,7 @@ const SignInPage = () => {
           placeholder="Enter your password"
         />
         <ButtonPrimary text="Login" />
-        <div className="text-center">
+        <div className="text-center flex flex-col md:inline">
           Don&apos;t have an account?
           <Link href={REGISTER_ROUTE} className="text-primary-default">
             Create account
