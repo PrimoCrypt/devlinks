@@ -28,7 +28,7 @@ const InputField = ({
     >
       <label className="leading-[150%] inline-block">{label}</label>
       <div
-        className={`w-full h-[3rem] flex flex-row gap-[0.75rem] py-[0.75rem] px-[1rem] rounded-lg border-solid border-[1px] ${
+        className={`w-full  h-[3rem] flex flex-row gap-[0.75rem] py-[0.75rem] px-[1rem] rounded-lg border-solid border-[1px] ${
           isActive
             ? "border-primary-default shadow-[0px_0px_32px_rgba(99,_60,_255,_0.25)] "
             : "border-grey-light"
@@ -36,7 +36,7 @@ const InputField = ({
       >
         <Image width={16} height={16} src={image} alt="" />
         <input
-          className={`w-full outline-none ${
+          className={`w-full outline-none bg-inherit ${
             isActive ? "opcaity-[1]" : "opacity-[0.75]"
           }`}
           type={type}
