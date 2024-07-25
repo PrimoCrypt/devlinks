@@ -26,7 +26,7 @@ const InputField = ({
     <div
       className={`w-full gap-[0.25rem] text-left text-[0.75rem] flex ${flexDirection} ${flexAlignItems} ${flexJustify}`}
     >
-      <label className="leading-[150%] inline-block">{label}</label>
+      <label className="leading-[150%] min-w-20 inline-block">{label}</label>
       <div
         className={`w-full  h-[3rem] flex flex-row gap-[0.75rem] py-[0.75rem] px-[1rem] rounded-lg border-solid border-[1px] ${
           isActive
