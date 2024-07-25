@@ -1,7 +1,7 @@
 import NavBar from "@/components/navbar";
 import MobileSection from "./mobile-section";
 
-const userData = {
+export const userData = {
   name: "",
   email: "ben@example.com",
   links: [

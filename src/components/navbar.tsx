@@ -3,6 +3,7 @@ import { Link as LinkIcon, CircleUserRound } from "lucide-react";
 import Image from "next/image";
 import ButtonSecondary from "./button-secondary";
 import Link from "next/link";
+import { PREVIEW_ROUTE } from "@/constants/routes";
 
 const NavBar = ({ type }: { type?: string }) => {
   return (
@@ -45,12 +46,14 @@ const NavBar = ({ type }: { type?: string }) => {
               </div>
             </Link>
           </div>
-          <div className="hidden md:flex rounded-lg flex-col items-start justify-start">
-            <ButtonSecondary text="Preview" />
-          </div>
-          <div className="rounded-lg flex max-w-6 md:hidden flex-col items-start justify-start">
-            <ButtonSecondary text="preview" />
-          </div>
+          <Link href={PREVIEW_ROUTE}>
+            <div className="hidden md:flex rounded-lg flex-col items-start justify-start">
+              <ButtonSecondary text="Preview" />
+            </div>
+            <div className="rounded-lg flex max-w-6 md:hidden flex-col items-start justify-start">
+              <ButtonSecondary text="preview" />
+            </div>
+          </Link>
         </div>
       </div>
     </div>

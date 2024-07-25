@@ -18,7 +18,7 @@ const LinksPage = ({ links = initialLinks }: LinkTypes) => {
         </p>
       </div>
       <div className="flex flex-col gap-[1.5rem]">
-        <div onClick={() => links.push({ name: "", icon: "", url: "" })}>
+        <div onClick={() => links.push({ name: "nhame", icon: "", url: "" })}>
           <ButtonSecondary text="+ Add new link" />
         </div>
         <div className="flex flex-col gap-[1.5rem] ">
