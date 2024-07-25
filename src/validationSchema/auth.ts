@@ -9,7 +9,7 @@ const loginSchema = Yup.object({
     .required("Can't be empty"),
   password: Yup.string()
     .required("Please check again")
-    .min(6, "Please enter minimum if 6 characters for password"),
+    .min(6, "min. of 6 characters"),
 });
 
 export const loginValidation = () =>
@@ -21,7 +21,7 @@ const registerSchema = Yup.object({
   email: Yup.string().required("Can't be empty"),
   password: Yup.string()
     .required("Please check again")
-    .min(6, "Please enter minimum if 6 characters for password"),
+    .min(6, "min. of 6 characters"),
   cnfPassword: Yup.string()
     .required("Password must match")
     .oneOf([Yup.ref("password")], "Passwords must match"),
