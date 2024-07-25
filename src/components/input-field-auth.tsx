@@ -44,7 +44,7 @@ const InputFieldAuth = ({
         <input
           {...register(name)}
           className={`w-full outline-none ${
-            isActive ? "opcaity-[1] bg-transparent" : "opacity-[0.75]"
+            isActive ? "opcaity-[1]" : "opacity-[0.75]"
           }`}
           type={type}
           name={name}
