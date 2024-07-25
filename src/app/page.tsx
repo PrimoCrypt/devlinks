@@ -11,7 +11,7 @@ function HomeDisplay() {
   }, [router]);
 
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="flex justify-center items-center h-screen bg-grey-medium">
       <LoaderPinwheel />;
     </div>
   );
