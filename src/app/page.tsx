@@ -12,7 +12,10 @@ function HomeDisplay() {
 
   return (
     <div className="flex justify-center items-center h-screen bg-grey-medium">
-      <LoaderPinwheel />;
+      <div className="flex flex-col items-center text-white">
+        <LoaderPinwheel />
+        <h1 className="mt-4 text-2xl">Loading....</h1>
+      </div>
     </div>
   );
 }
