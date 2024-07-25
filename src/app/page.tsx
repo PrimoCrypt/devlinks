@@ -10,7 +10,11 @@ function HomeDisplay() {
     router.push("/auth/signin");
   }, [router]);
 
-  return <LoaderPinwheel />;
+  return (
+    <div className="flex justify-center items-center h-screen">
+      <LoaderPinwheel />;
+    </div>
+  );
 }
 
 export default HomeDisplay;
