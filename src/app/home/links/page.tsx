@@ -1,3 +1,4 @@
+"use client";
 import ButtonSecondary from "@/components/button-secondary";
 import DropDown from "@/components/dropdown";
 import InputField from "@/components/input-field";
