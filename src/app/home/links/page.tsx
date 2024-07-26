@@ -7,7 +7,7 @@ import { LinkTypes } from "@/types/LinkTypes";
 
 const LinksPage = ({ links = initialLinks }: LinkTypes) => {
   return (
-    <div className="p-[2.5rem] flex flex-col gap-[2.5rem]">
+    <div className="p-[2.5rem] flex flex-col gap-[2.5rem] max-h-[49rem]">
       <div>
         <h1 className="leading-[3rem] font-bold text-[2rem] text-grey-dark">
           Customize your links
@@ -17,11 +17,11 @@ const LinksPage = ({ links = initialLinks }: LinkTypes) => {
           world!
         </p>
       </div>
-      <div className="flex flex-col gap-[1.5rem]">
+      <div className="flex flex-col gap-[1.5rem] md:overflow-auto">
         <div onClick={() => links.push({ name: "nhame", icon: "", url: "" })}>
           <ButtonSecondary text="+ Add new link" />
         </div>
-        <div className="flex flex-col gap-[1.5rem] ">
+        <div className="flex flex-col gap-[1.5rem] md:overflow-auto">
           {links.map((link) => {
             return (
               <div

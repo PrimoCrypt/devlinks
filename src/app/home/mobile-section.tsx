@@ -29,7 +29,7 @@ const MobileSection = ({
   ],
 }: LinksPageProperties) => {
   return (
-    <div className=" bg-white rounded-lg flex justify-center items-center py-[5rem] h-[49.125rem] relative">
+    <div className=" bg-white rounded-lg flex justify-center items-center py-[5rem] h-full md:h-[49.125rem] relative">
       <div className="self-start px-[2rem]">
         <Image width={307} height={631} src="/preview-section.svg" alt="" />
       </div>
