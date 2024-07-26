@@ -16,7 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${instr_sans.className} bg-grey-verylight h-[100vh]`}>
+      <body
+        className={`${instr_sans.className} bg-grey-verylight min-h-[100vh]`}
+      >
         {children}
       </body>
     </html>
