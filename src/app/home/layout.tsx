@@ -1,3 +1,4 @@
+"use client"
 import NavBar from "@/components/navbar";
 import MobileSection from "./mobile-section";
 
@@ -27,6 +28,7 @@ export const userData = {
 };
 
 const Links = ({ children }: { children: React.ReactNode }) => {
+
   return (
     <div className="p-[1.5rem] flex flex-col gap-[1.5rem] max-h-full">
       <NavBar type="links" />

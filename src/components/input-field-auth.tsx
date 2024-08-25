@@ -43,7 +43,7 @@ const InputFieldAuth = ({
         <Image width={16} height={16} src={image} alt="" />
         <input
           {...register(name)}
-          className={`w-full bg-inherit outline-none ${
+          className={`w-full outline-none bg-white appearance-none${
             isActive ? "opcaity-[1]" : "opacity-[0.75]"
           }`}
           type={type}

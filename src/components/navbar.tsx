@@ -4,8 +4,11 @@ import Image from "next/image";
 import ButtonSecondary from "./button-secondary";
 import Link from "next/link";
 import { PREVIEW_ROUTE } from "@/constants/routes";
+import { usePathname } from "next/navigation";
 
 const NavBar = ({ type }: { type?: string }) => {
+  const pathname = usePathname()
+
   return (
     <div>
       <div className="w-full relative rounded-xl  bg-white overflow-hidden flex flex-col items-start justify-center py-[1rem] pr-[1rem] pl-[1.5rem] box-border text-left text-[1rem]">
@@ -20,7 +23,7 @@ const NavBar = ({ type }: { type?: string }) => {
             <Link href="/home/links">
               <div
                 className={`rounded-lg  cursor-pointer ${
-                  type === "links"
+                  pathname === "/home/links"
                     ? "bg-primary-disabled text-primary-default"
                     : "bg-transparent text-grey-dark"
                 }  flex flex-row items-center justify-start md:py-[0.687rem] p-2 md:px-[1.687rem] gap-[0.5rem]`}
@@ -34,7 +37,7 @@ const NavBar = ({ type }: { type?: string }) => {
             <Link href="/home/profile">
               <div
                 className={`rounded-lg  cursor-pointer ${
-                  type === "profile"
+                  pathname === "/home/profile"
                     ? "bg-primary-disabled text-primary-default"
                     : "bg-transparent text-grey-dark"
                 }  flex flex-row items-center justify-start md:py-[0.687rem] p-2 md:px-[1.687rem] gap-[0.5rem]`}
