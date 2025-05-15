@@ -1,5 +1,6 @@
 import { LinkContentTypes } from "@/types/LinkTypes";
 import { create } from "zustand";
+import { persist } from "zustand/middleware";
 
 interface LinkStoreProps {
     initialLinks: LinkContentTypes[];
@@ -8,7 +9,7 @@ interface LinkStoreProps {
     updateLink: (updatedLink: LinkContentTypes) => void;
 }
 
-const useLinksStore = create<LinkStoreProps>((set) => ({
+const useLinksStore = create<LinkStoreProps>()(persist((set) => ({
     initialLinks: [],
     addLink: (link) =>
         set((state) => ({ initialLinks: [...state.initialLinks, link] })),
@@ -24,6 +25,6 @@ const useLinksStore = create<LinkStoreProps>((set) => ({
                 link.id === updatedLink.id ? updatedLink : link
             ),
         })),
-}));
+}),{name: "link-store"}));
 
 export default useLinksStore;
