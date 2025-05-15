@@ -7,7 +7,7 @@ import { PREVIEW_ROUTE } from "@/constants/routes";
 import { usePathname } from "next/navigation";
 
 const NavBar = ({ type }: { type?: string }) => {
-  const pathname = usePathname()
+  const pathname = usePathname();
 
   return (
     <div>

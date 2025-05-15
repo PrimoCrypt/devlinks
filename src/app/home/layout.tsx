@@ -1,8 +1,9 @@
 "use client"
 import NavBar from "@/components/navbar";
 import MobileSection from "./mobile-section";
+import { useState } from "react";
 
-export const userData = {
+export const initialUserData = {
   name: "",
   email: "ben@example.com",
   links: [
@@ -29,6 +30,7 @@ export const userData = {
 
 const Links = ({ children }: { children: React.ReactNode }) => {
 
+  const [userData, setUserData] = useState(initialUserData);
   return (
     <div className="p-[1.5rem] flex flex-col gap-[1.5rem] max-h-full">
       <NavBar type="links" />

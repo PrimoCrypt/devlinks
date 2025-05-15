@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Instrument_Sans } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "@/components/ui/toaster";
 
 const instr_sans = Instrument_Sans({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
         className={`${instr_sans.className} bg-grey-verylight min-h-[100vh]`}
       >
         {children}
+        <Toaster />
       </body>
     </html>
   );

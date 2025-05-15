@@ -1,6 +1,6 @@
 import PreviewCard from "@/components/preview-card";
 import PreviewNavbar from "@/components/preview-navbar";
-import { userData } from "../home/layout";
+import { initialUserData as userData } from "../home/layout";
 const PreviewPage = () => {
   return (
     <div className="h-full w-full flex flex-col items-center">

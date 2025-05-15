@@ -2,3 +2,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    input {
+      box-shadow: 0 0 0 30px #FFF inset !important;
+      -webkit-text-fill-color: inherit !important;
+    }
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0 30px #FFF inset !important;
+      -webkit-text-fill-color: inherit !important;
+    }
+  :root {
+        --radius: 0.5rem;
+    }
+  }
