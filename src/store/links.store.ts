@@ -1,6 +1,6 @@
-import { LinkContentTypes } from "@/types/LinkTypes";
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
+import { LinkContentTypes } from "../types/LinkTypes";
 
 interface LinkStoreProps {
     initialLinks: LinkContentTypes[];

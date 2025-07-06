@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
-import { Instrument_Sans } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 
-const instr_sans = Instrument_Sans({ subsets: ["latin"] });
+const instr_sans = localFont({
+  src: '../../public/fonts/InstrumentSans.ttf',
+  variable: '--font-instrument-sans',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: "DevLinks",

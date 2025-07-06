@@ -8,7 +8,7 @@ const PreviewPage = () => {
         <PreviewNavbar />
       </div>
       <div className="bg-white max-w-[349px] w-full relative top-[-15%] rounded-2xl">
-        <PreviewCard {...userData} />
+        <PreviewCard/>
       </div>
     </div>
   );
