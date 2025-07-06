@@ -1,8 +1,6 @@
 "use client";
 import ButtonPrimary from "@/components/button-primary";
 import InputField from "@/components/input-field";
-import { LinkTypes } from "@/types/LinkTypes";
-import imageIcon from "@/../public/image-icon.svg";
 import Image from "next/image";
 import { useState } from "react";
 import useUserStore from "@/store/user.store";
